@@ -20,5 +20,18 @@
     }
     ?>
 
+    <?php
+    $isEasy = (boolean)0;
+    if($isEasy)
+    {
+        echo "C'est Facile !!";
+    }
+    else 
+    {
+        echo "C'est difficile !!!";
+    }
+    
+    ?>
+
 </body>
 </html>

@@ -1,3 +1,6 @@
+<?php
+$isEasy = true;
+?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -9,29 +12,10 @@
     <h1>Exercice 2 Partie 2</h1>
 
     <?php
-    $isEasy = true;
-    if($isEasy)
-    {
-        echo "C'est Facile !!";
-    }
-    else 
-    {
-        echo "C'est difficile !!!";
-    }
-    ?>
-
-    <?php
-    $isEasy = (boolean)0;
-    if($isEasy)
-    {
-        echo "C'est Facile !!";
-    }
-    else 
-    {
-        echo "C'est difficile !!!";
-    }
-    
-    ?>
-
+    if($isEasy): ?>
+    <p><?= 'C\'est Facile !!'; ?></p>
+    <?php else: ?>
+    <p><?= 'C\'est difficile !!!'; ?></p>
+    <?php endif ?>
 </body>
 </html>
